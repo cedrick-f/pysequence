@@ -1126,7 +1126,7 @@ class FenetreBilan(wx.Frame):
             l += 1
         lastSeq = l-1
         if pt != 0:
-            ws0.write_merge(lastComp+4, pt-1, c-6, c-6, u"1ère", self.styleN)  # P�riode
+            ws0.write_merge(lastComp+4, pt-1, c-6, c-6, u"1re", self.styleN)  # P�riode
             if pt < lastSeq:
                 ws0.write_merge(pt+1, lastSeq, c-6, c-6, u"Tale", self.styleN)  # P�riode
                 
@@ -1293,7 +1293,7 @@ class FenetreBilan(wx.Frame):
                 c += 1
             
             if pt != 0:
-                ws0.write_merge(l-6, l-6, 5, pt-1, u"1ère", self.styleN)  # Ann�e
+                ws0.write_merge(l-6, l-6, 5, pt-1, u"1re", self.styleN)  # Ann�e
                 if pt < c:
                     ws0.write_merge(l-6, l-6, pt+1, c, u"Tale", self.styleN)  # Ann�e
                 
